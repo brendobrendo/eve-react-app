@@ -1,9 +1,5 @@
 #!/bin/bash
 cd /home/ec2-user/server/src
-echo about to start the build
-npm run build
-echo built and reay to start
-npm start
 echo about to start pm2
 pm2 start npm --name "eve-react-app" -- start
 echo about to startup
