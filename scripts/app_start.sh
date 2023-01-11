@@ -1,10 +1,10 @@
 #!/bin/bash
 cd /home/ec2-user/server/src
-echo about to start pm2
+echo lsof -i tcp:3000
+echo About to start npm
+npm start
+echo finished npm start
 pm2 start npm --name "eve-react-app" -- start
-echo about to startup
 pm2 startup
-echo about to save
 pm2 save
-echo about to restart all
 pm2 restart all
