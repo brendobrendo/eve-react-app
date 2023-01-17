@@ -27,8 +27,3 @@ hooks:
     - location: scripts/app_start.sh
       timeout: 300
       runas: root
-
-  PM2Start:
-    - location: scripts/pm2_start.sh
-      timeout: 300
-      runas: root
